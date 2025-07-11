@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * HealthTrack Design System
+   * Color variables for the HealthTrack application
+   */
+  :root {
+    /* HealthTrack Primary Colors */
+    --healthtrack-primary: 223 21% 20%; /* #2A2E3F */
+    --healthtrack-secondary: 223 12% 40%; /* #5C5F72 */
+    --healthtrack-tertiary: 223 8% 50%; /* #777B85 */
+
+    /* Background Colors */
+    --background: 0 0% 100%; /* #FFFFFF */
+    --surface: 210 17% 98%; /* #F8F9FA */
+    --surface-light: 0 0% 99%; /* #FEFEFE */
+    --surface-dark: 210 14% 95%; /* #F3F4F6 */
+
+    /* Text Colors */
+    --text-primary: 223 21% 20%; /* #2A2E3F */
+    --text-secondary: 223 8% 50%; /* #717785 */
+    --text-tertiary: 223 9% 45%; /* #6D7585 */
+    --text-muted: 223 6% 62%; /* #9699A1 */
+    --text-light: 223 7% 70%; /* #AEB1B7 */
+
+    /* Border Colors */
+    --border-default: 210 11% 91%; /* #E3E5E8 */
+    --border-light: 210 14% 95%; /* #F3F4F6 */
+    --border-medium: 210 9% 84%; /* #D1D5DB */
+
+    /* Legacy shadcn colors for component compatibility */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 223 21% 20%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
