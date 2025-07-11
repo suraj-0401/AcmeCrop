@@ -2,20 +2,12 @@
   "name": "fusion-starter",
   "private": true,
   "type": "module",
-  "pkg": {
-    "assets": [
-      "dist/spa/*"
-    ],
-    "scripts": [
-      "dist/server/**/*.js"
-    ]
-  },
+  
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "build:client": "vite build",
-    "start": "node dist/server/node-build.mjs",
-    "test": "vitest --run",
+     "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview",
+  "vercel-build": "vite build",
     "format.fix": "prettier --write .",
     "typecheck": "tsc"
   },
